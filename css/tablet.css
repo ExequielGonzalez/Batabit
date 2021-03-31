@@ -1,0 +1,26 @@
+.main-tables-container {
+  display: inline-flex;
+}
+
+.main-currency-table,
+.main-commission-table {
+  width: 50px;
+  margin: 0 50px;
+}
+
+.main-plans--options {
+  justify-content: center;
+}
+
+.product-cards--container {
+  display: inline-block;
+  width: auto;
+  margin: 10px 18px;
+}
+/* .product-detail--card {
+  width: 50%;
+} */
+
+.main-branding--photo {
+  background-image: url("../assets/img/bitcoinbaby2x.jpg");
+}

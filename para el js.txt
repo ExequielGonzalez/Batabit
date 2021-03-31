@@ -1,0 +1,54 @@
+const arrow_right = document.getElementById("arrow-right")
+const arrow_left = document.getElementById("arrow-left")
+const table_1 = document.getElementById("table-1")
+const table_2 = document.getElementById("table-2")
+arrow_right.onclick = function(){
+   table_1.style.display = "none"
+   table_2.style.display = "grid"
+   arrow_left.style.display = "block"
+}
+arrow_left.onclick = function(){
+    table_1.style.display = "grid"
+    table_2.style.display = "none"
+    arrow_right.style.display = "block"
+}
+
+.container-arrow{
+  height: 10px;
+  width: 12px;
+  background-image: url("../assets/icons/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  cursor: pointer;
+}
+.container-arrow--left{
+  display: none;
+  height: 10px;
+  width: 12px;
+  background-image: url("../assets/icons/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  cursor: pointer;
+}
+
+
+
+Para esto tuve que incluir dos div con un background de las flechas
+(_ El div va en la tabla correspondiente, flecha derecha para las comisiones y la izquierda para las monedas_)
+
+<div class="container-arrow" id="arrow-right"></div>
+
+<div class="container-arrow--left" id="arrow-left"></div>
+
+
+
+
+
